@@ -1,0 +1,18 @@
+var g = new Dygraph(
+    document.getElementById('graph'),
+    [
+        [1, null, 3],
+        [2, 2, null],
+        [3, null, 7],
+        [4, 5, null],
+        [5, null, 5],
+        [6, 3, null]
+    ],
+    {
+        labels: ['x', 'A', 'B'],
+        connectSeparatedPoints: true,
+        drawPoints: true
+    }
+);
+
+export { g }
