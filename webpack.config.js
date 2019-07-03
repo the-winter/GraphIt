@@ -1,12 +1,14 @@
+const path = require('path');
+const webpack = require('webpack');
 const HtmlWebPackPlugin = require("html-webpack-plugin")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
-const resolve = require('path').resolve;
-const webpack = require('webpack');
 
 module.exports = {
+    entry: './src/index.js',
     devtool: 'cheap-module-eval-source-map', // enum
     output: {
         filename: 'bundle.js',
+        path: path.resolve(__dirname, 'dist')
     },
     module: {
         rules: [
@@ -55,6 +57,14 @@ module.exports = {
                     },
                     // sass-loader
                     { loader: 'sass-loader' }
+                ]
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    // style-loader
+                    { loader: MiniCssExtractPlugin.loader },
+                    'css-loader'
                 ]
             }
         ]
