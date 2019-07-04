@@ -2,4 +2,8 @@ const hello = (greeting) => {
     console.log(greeting)
 }
 
-export { hello }
+const draw = () => {
+    console.log('draw chart');
+}
+
+export { hello, draw }

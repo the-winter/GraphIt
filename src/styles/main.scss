@@ -12,10 +12,19 @@ nav.sidebar {
     top: 0;
     bottom: 0;
     background: green;
+    padding-top: 55px;
 }
 
 nav.navbar-dark {
         background: black;
+}
+
+a.navbar-brand {
+    color: white;
+}
+
+a.nav-link {
+    color: white;
 }
 
 // FIX why writing nested styles wont work?
@@ -24,3 +33,7 @@ nav.navbar-dark {
 //         background: black
 //     }
 // }
+
+div.col-md-10 {
+    padding-top: 55px;
+}
