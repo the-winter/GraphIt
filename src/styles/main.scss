@@ -27,6 +27,18 @@ a.nav-link {
     color: white;
 }
 
+button {
+    padding: 20px;
+}
+
+label {
+    color: white;
+}
+
+div.graph div {
+    width: 100%;
+}
+
 // FIX why writing nested styles wont work?
 // nav {
 //     .navbar-dark {

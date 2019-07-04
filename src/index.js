@@ -8,4 +8,3 @@ import 'dygraphs';
 window.draw = draw;
 
 console.log(hello('Hi again'));
-console.log(draw())

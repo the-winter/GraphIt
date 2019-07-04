@@ -10,6 +10,8 @@ var g = new Dygraph(
         [7, null, 6]
     ],
     {
+        width: 'auto',
+        ylabel: 'items',
         title: 'Daily Temperatures in New York vs. San Francisco',
         labels: ['x', 'A', 'B'],
         connectSeparatedPoints: true,

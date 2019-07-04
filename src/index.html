@@ -19,12 +19,31 @@
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
 
-                        First name:<br>
-                        <input type="text" name="firstname" value="Mickey">
-                        <br>
-                        Last name:<br>
+                        <label></label>
+                        <label>Graph Title:</label><br>
+                        <input type="text" id="title" name="title">
+                        <label>Y axis Label</label><br>
                         <input type="text" name="lastname" value="Mouse">
-                        <br><br>
+                        <br>
+                        <p>Inputs</p>
+                        <br>
+                        <label>1</label>
+                        <input type="text" name="one">
+                        <label>2</label>
+                        <input type="text" name="two">
+                        <label>3</label>
+                        <input type="text" name="three">
+                        <label>4</label>
+                        <input type="text" name="four">
+                        <label>5</label>
+                        <input type="text" name="five">
+                        <label>6</label>
+                        <input type="text" name="six">
+                        <label>7</label>
+                        <input type="text" name="seven">
+
+                        <label>Y axis Label</label><br>
+                        <input type="text" name="lastname"><br>
                         <button value="Draw" onclick=draw()></button>
 
 
@@ -175,7 +194,7 @@
                 </div>
             </nav>
             <div class="col-md-10 ml-md-auto">
-                <div id="graph"></div>
+                <div id="graph" style="width:100%"></div>
             </div>
         </div>
     </div>
