@@ -1,7 +1,8 @@
-@import "~bootstrap/scss/bootstrap.scss";
+// @import "~bootstrap/scss/bootstrap.scss";
 
-$bg: blue;
+$bg: yellow;
 
-body {
-    background: $bg
+div.col-sm-6 {
+    background: $bg;
+    color: green
 }

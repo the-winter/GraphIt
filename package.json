@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
+    "scss": "node-sass --watch src/styles -o css",
     "start:dev": "webpack-dev-server"
   },
   "author": "",
