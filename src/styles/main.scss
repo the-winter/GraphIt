@@ -1,4 +1,4 @@
-// @import "~bootstrap/scss/bootstrap.scss";
+@import "node_modules/bootstrap/scss/bootstrap.scss";
 
 $bg: yellow;
 
@@ -6,3 +6,21 @@ div.col-sm-6 {
     background: $bg;
     color: green
 }
+
+nav.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: green;
+}
+
+nav.navbar-dark {
+        background: black;
+}
+
+// FIX why writing nested styles wont work?
+// nav {
+//     .navbar-dark {
+//         background: black
+//     }
+// }

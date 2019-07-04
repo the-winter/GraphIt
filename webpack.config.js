@@ -45,16 +45,9 @@ module.exports = {
             },
             {
                 test: /\.s?css$/,
+                exclude: /node_modules/,
                 use: ['style-loader', 'css-loader', 'sass-loader']
-            },
-            // {
-            //     test: /\.css$/,
-            //     use: [
-            //         // style-loader
-            //         { loader: MiniCssExtractPlugin.loader },
-            //         'css-loader'
-            //     ]
-            // }
+            }
         ]
     },
     plugins: [
