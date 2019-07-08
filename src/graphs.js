@@ -15,7 +15,12 @@ var g = new Dygraph(
         title: 'Daily Temperatures in New York vs. San Francisco',
         labels: ['x', 'A', 'B'],
         connectSeparatedPoints: true,
-        drawPoints: true
+        drawPoints: true,
+        axes: {
+            x: {
+                // pixelsPerLabel: 200 // may need to be a media query
+            }
+        }
     }
 );
 

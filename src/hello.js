@@ -6,6 +6,7 @@ const draw = () => {
 
     console.log(document.getElementById("title").value);
     const title = document.getElementById("title").value;
+    const label = document.getElementById("label").value;
 
     const one = parseInt(document.getElementById("one").value);
     const two = parseInt(document.getElementById("two").value);
@@ -23,10 +24,17 @@ const draw = () => {
             // showRoller: true,
             // customBars: true,
             title: title,
-            ylabel: "test",
+            ylabel: label,
             labels: ['x', 'A'],
             connectSeparatedPoints: true,
-            drawPoints: true
+            drawPoints: true,
+            axes: {
+                x: {
+                    valueformatter: function (x) {
+                        return Math.round(x);
+                    }
+                }
+            }
         }
     );
 }
