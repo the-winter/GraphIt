@@ -1,8 +1,8 @@
 $(document).ready(function () {
-    var maxField = 10; //Input fields increment limitation
+    var maxField = 11; //Input fields increment limitation
     const wrapper = $('.added-inputs');
     const addButton = $('button.add-inputs');
-    var x = 7;
+    var x = 6;
     let fieldHTML;
 
 
@@ -11,7 +11,7 @@ $(document).ready(function () {
         e.stopImmediatePropagation();
         //Check maximum number of input fields
         if (x < maxField) {
-            fieldHTML = `<div><input id="${x}"type="text" name="field_name[]" value=""/><a href="javascript:void(0);" class="remove_button">X</a></div>`
+            fieldHTML = `<div><label>${x}</label><input id="${x}"type="text" name="field_name[]" value=""/><a href="javascript:void(0);" class="remove_button">X</a></div>`
             x++; //Increment field counter
             $(wrapper).append(fieldHTML); //Add field html
         }
