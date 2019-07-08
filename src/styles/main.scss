@@ -27,7 +27,7 @@ a.nav-link {
     color: white;
 }
 
-button {
+.draw {
     padding: 20px;
 }
 
@@ -37,6 +37,16 @@ label {
 
 div.graph div {
     width: 100%;
+}
+
+.add-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.added-inputs {
+    
 }
 
 // FIX why writing nested styles wont work?

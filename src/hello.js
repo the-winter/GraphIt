@@ -21,20 +21,11 @@ const draw = () => {
         document.getElementById('graph'),
         inputs,
         {
-            // showRoller: true,
-            // customBars: true,
             title: title,
             ylabel: label,
-            labels: ['x', 'A'],
+            labels: ['x', label],
             connectSeparatedPoints: true,
             drawPoints: true,
-            axes: {
-                x: {
-                    valueformatter: function (x) {
-                        return Math.round(x);
-                    }
-                }
-            }
         }
     );
 }

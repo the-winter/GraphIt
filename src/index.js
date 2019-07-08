@@ -1,5 +1,6 @@
 import { hello, draw } from './hello';
 import { g } from './graphs.js';
+import './script.js'
 import './styles/main.scss';
 import 'jquery';
 import 'bootstrap/scss/bootstrap.scss';

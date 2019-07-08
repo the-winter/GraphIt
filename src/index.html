@@ -20,28 +20,31 @@
                     <ul class="nav flex-column">
 
                         <label></label>
-                        <label>Graph Title:</label><br>
+                        <label>Graph Title:</label>
                         <input type="text" id="title" name="title">
-                        <label>Y axis Label</label><br>
+                        <label>Y axis Label</label>
                         <input type="text" id="label" name="label">
                         <br>
-                        <p>Inputs</p>
-                        <br>
-                        <label>1</label>
-                        <input type="text" name="one" id="one">
-                        <label>2</label>
-                        <input type="text" name="two" id="two">
-                        <label>3</label>
-                        <input type="text" name="three" id="three">
-                        <label>4</label>
-                        <input type="text" name="four" id="four">
-                        <label>5</label>
-                        <input type="text" name="five" id="five">
-                        <label>6</label>
-                        <input type="text" name="six" id="six">
-                        <label>7</label>
-                        <input type="text" name="seven" id="seven">
-                        <button value="Draw" onclick=draw()></button>
+                        <div class="add-inputs">
+                            <p>Inputs</p><button value="Add Input" onclick={}>Add Input</button>
+                        </div>
+                        <div class="added-inputs">
+                            <label>1</label>
+                            <input type="text" name="one" id="one">
+                            <label>2</label>
+                            <input type="text" name="two" id="two">
+                            <label>3</label>
+                            <input type="text" name="three" id="three">
+                            <label>4</label>
+                            <input type="text" name="four" id="four">
+                            <label>5</label>
+                            <input type="text" name="five" id="five">
+                            <label>6</label>
+                            <input type="text" name="six" id="six">
+                            <label>7</label>
+                            <input type="text" name="seven" id="seven">
+                        </div>
+                        <button class="draw" onclick=draw()>GraphIt</button>
 
 
 

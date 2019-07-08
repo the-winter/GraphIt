@@ -6007,7 +6007,7 @@ a.navbar-brand {
 a.nav-link {
   color: white; }
 
-button {
+.draw {
   padding: 20px; }
 
 label {
@@ -6015,6 +6015,11 @@ label {
 
 div.graph div {
   width: 100%; }
+
+.add-inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
 
 div.col-md-10 {
   padding-top: 55px; }
