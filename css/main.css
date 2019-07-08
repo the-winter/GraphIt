@@ -6016,7 +6016,7 @@ label {
 div.graph div {
   width: 100%; }
 
-.add-inputs {
+.inputs {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
