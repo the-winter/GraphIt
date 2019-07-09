@@ -4,19 +4,34 @@ const hello = (greeting) => {
 
 const draw = () => {
 
-    console.log(document.getElementById("title").value);
     const title = document.getElementById("title").value;
     const label = document.getElementById("label").value;
 
-    const one = parseInt(document.getElementById("one").value);
-    const two = parseInt(document.getElementById("two").value);
-    const three = parseInt(document.getElementById("three").value);
-    const four = parseInt(document.getElementById("four").value);
-    const five = parseInt(document.getElementById("five").value);
-    const six = parseInt(document.getElementById("six").value);
-    const seven = parseInt(document.getElementById("seven").value);
+    var oneA;
+    var twoA;
+    var threeA;
+    var fourA;
+    var fiveA;
+    var sixA;
+    var sevenA;
+    var eightA;
+    var nineA;
+    var tenA;
+    var inputs = [];
 
-    const inputs = [[1, one], [2, two], [3, three], [4, four], [5, five], [6, six], [7, seven]]
+    for (var i = 1; i <= 11; i++) {
+        let id = i.toString();
+        var elem = document.getElementById(id);
+
+        if (elem === null) {
+            break;
+        } else if (elem.value === "") {
+            break;
+        } else {
+            inputs.push([i, parseInt(elem.value)])
+        }
+    }
+
     var g = new Dygraph(
         document.getElementById('graph'),
         inputs,
