@@ -1,8 +1,10 @@
-const hello = (greeting) => {
-    console.log(greeting)
+const addYAxis = () => {
+    document.getElementsByClassName("second-axis-inputs")[0].style.display = "block";
+    document.getElementById("draw1").style.display = "none";
 }
 
-const draw = () => {
+const draw = (axis) => {
+
 
     const title = document.getElementById("title").value;
     const label = document.getElementById("label").value;
@@ -50,4 +52,4 @@ const draw = () => {
     );
 }
 
-export { hello, draw }
+export { addYAxis, draw }

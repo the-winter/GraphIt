@@ -6024,5 +6024,8 @@ div.graph div {
 .add-y {
   display: none; }
 
+.second-axis-inputs {
+  display: none; }
+
 div.col-md-10 {
   padding-top: 55px; }

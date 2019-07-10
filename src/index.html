@@ -49,8 +49,44 @@
                                 <input type="text" name="five" id="5">
                             </div>
                         </div>
-                        <button class="draw" onclick=draw()>GraphIt</button>
-                        <button id="add-y" class="add-y" onclick=draw()>Add Y Axis</button>
+                        <button id="draw1" class="draw" onclick=draw(1)>GraphIt</button>
+                        <button id="add-y" class="add-y" onclick=addYAxis()>Add Y Axis</button>
+
+                        <div class="second-axis-inputs">
+                            <h4>Inputs for Axis 2</h4>
+                                <label></label>
+                                <label>Graph Title:</label>
+                                <input type="text" id="title" name="title">
+                                <label>Y axis Label</label>
+                                <input type="text" id="label" name="label">
+                                <br>
+                                <div class="inputs">
+                                    <p>Inputs</p><button class="add-inputs" value="Add Input">Add Input</button>
+                                </div>
+                                <div class="added-inputs">
+                                    <div>
+                                        <label>1</label>
+                                        <input type="text" name="one" id="1">
+                                    </div>
+                                    <div>
+                                        <label>2</label>
+                                        <input type="text" name="two" id="2">
+                                    </div>
+                                    <div>
+                                        <label>3</label>
+                                        <input type="text" name="three" id="3">
+                                    </div>
+                                    <div>
+                                        <label>4</label>
+                                        <input type="text" name="four" id="4">
+                                    </div>
+                                    <div>
+                                        <label>5</label>
+                                        <input type="text" name="five" id="5">
+                                    </div>
+                                </div>
+                                <button class="draw" onclick=draw()>GraphIt</button>
+                        </div>
                     </ul>
                 </div>
             </nav>
