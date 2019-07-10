@@ -18,6 +18,7 @@ const draw = () => {
     var nineA;
     var tenA;
     var inputs = [];
+    var addY = document.getElementById("add-y");
 
     for (var i = 1; i <= 11; i++) {
         let id = i.toString();
@@ -30,6 +31,10 @@ const draw = () => {
         } else {
             inputs.push([i, parseInt(elem.value)])
         }
+    }
+
+    if (inputs[0].length === 2) {
+        addY.style.display = "block"
     }
 
     var g = new Dygraph(

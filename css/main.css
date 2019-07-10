@@ -6021,5 +6021,8 @@ div.graph div {
   flex-direction: row;
   justify-content: space-between; }
 
+.add-y {
+  display: none; }
+
 div.col-md-10 {
   padding-top: 55px; }
