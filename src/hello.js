@@ -1,6 +1,7 @@
 const addYAxis = () => {
     document.getElementsByClassName("second-axis-inputs")[0].style.display = "block";
     document.getElementById("draw1").style.display = "none";
+    document.getElementById("add-y").disabled = true;
 }
 
 const draw = (axis) => {
