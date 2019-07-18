@@ -6021,10 +6021,10 @@ div.graph div {
   flex-direction: row;
   justify-content: space-between; }
 
-.add-y {
+.second-axis-inputs {
   display: none; }
 
-.second-axis-inputs {
+#axis-2-btn {
   display: none; }
 
 div.col-md-10 {

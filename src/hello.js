@@ -2,6 +2,7 @@ const addYAxis = () => {
     document.getElementsByClassName("second-axis-inputs")[0].style.display = "block";
     document.getElementById("draw1").style.display = "none";
     document.getElementById("add-y").disabled = true;
+    document.getElementById("axis-2-btn").style.display = "block";
 }
 
 const draw = (axis) => {

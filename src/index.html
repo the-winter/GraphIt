@@ -17,7 +17,7 @@
             <nav class="col-md-2 d-none d-md-block bg-light sidebar">
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
-                        <div class="test1">
+                        <div class="individual-axis-inputs">
                             <label></label>
                             <label>Graph Title:</label>
                             <input type="text" id="title" name="title">
@@ -36,27 +36,15 @@
                                     <label>2</label>
                                     <input type="text" name="two" id="2">
                                 </div>
-                                <div>
-                                    <label>3</label>
-                                    <input type="text" name="three" id="3">
-                                </div>
-                                <div>
-                                    <label>4</label>
-                                    <input type="text" name="four" id="4">
-                                </div>
-                                <div>
-                                    <label>5</label>
-                                    <input type="text" name="five" id="5">
-                                </div>
                             </div>
                         </div>
                         <button id="draw1" class="draw" onclick=draw(1)>GraphIt</button>
                         <button id="add-y" class="add-y" onclick=addYAxis()>Add Y Axis</button>
 
-                        <div class="second-axis-inputs test1">
-                            <h4>Inputs for Axis 2</h4>
+                        <div class="second-axis-inputs individual-axis-inputs2">
+                            <h4>Inputs for Axis 2 (Optional)</h4>
                                 <div class="inputs">
-                                    <p>Inputs</p><button class="add-inputs" value="Add Input">Add Input</button>
+                                    <p>Inputs</p>
                                 </div>
                                 <div class="added-inputs">
                                     <div>
@@ -67,21 +55,9 @@
                                         <label>2</label>
                                         <input type="text" name="two" id="2B">
                                     </div>
-                                    <div>
-                                        <label>3</label>
-                                        <input type="text" name="three" id="3B">
-                                    </div>
-                                    <div>
-                                        <label>4</label>
-                                        <input type="text" name="four" id="4B">
-                                    </div>
-                                    <div>
-                                        <label>5</label>
-                                        <input type="text" name="five" id="5B">
-                                    </div>
                                 </div>
-                                <button class="draw" onclick=draw(2)>GraphIt</button>
-                        </div>
+                            </div>
+                            <button id="axis-2-btn" class="draw" onclick=draw(2)>GraphIt</button>
                     </ul>
                 </div>
             </nav>
