@@ -2,7 +2,7 @@ $(document).ready(function () {
     var maxField = 11; //Input fields increment limitation
     var axis1Wrapper;
     var axis2Wrapper;
-    const addButton = $('button.add-inputs');
+    const addButton = $('a.add-inputs');
     var x = 3;
     let axis1fieldHtml;
     let axis2fieldHtml;
@@ -15,11 +15,17 @@ $(document).ready(function () {
         e.stopImmediatePropagation();
         //Check maximum number of input fields
         if (x < maxField) {
-            axis1fieldHtml = `<div><label>${x}</label><input id="${x}"type="text" name="field_name[]" value=""/><a href="javascript:void(0);" class="remove_button">X</a></div>`
-            axis2fieldHtml = `<div><label>${x}</label><input id="${x}B"type="text" name="field_name[]" value=""/><a href="javascript:void(0);" class="remove_button">X</a></div>`
+            axis1fieldHtml = `<div><label>${x}</label><input id="${x}"type="text" name="field_name[]" value="" required=""/><a href="javascript:void(0);" class="remove_button">X</a></div>`
+            axis2fieldHtml = `<div><label>${x}</label><input id="${x}B"type="text" name="field_name[]" value="" required=""/><a href="javascript:void(0);" class="remove_button">X</a></div>`
             x++; //Increment field counter
             $(axis1Wrapper).append(axis1fieldHtml); //Add field html
             $(axis2Wrapper).append(axis2fieldHtml);
         }
     });
+
+    $("form").submit(function (e) {
+        e.preventDefault();
+        $('form').parsley();
+    });
+
 })

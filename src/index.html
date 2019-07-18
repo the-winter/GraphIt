@@ -17,28 +17,29 @@
             <nav class="col-md-2 d-none d-md-block bg-light sidebar">
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
+                        <form data-parsley-validate>
                         <div class="individual-axis-inputs">
                             <label></label>
                             <label>Graph Title:</label>
-                            <input type="text" id="title" name="title">
+                            <input type="text" id="title" name="title" required="">
                             <label>Y axis Label</label>
-                            <input type="text" id="label" name="label">
+                            <input type="text" id="label" name="label" required="">
                             <br>
                             <div class="inputs">
-                                <p>Inputs</p><button class="add-inputs" value="Add Input">Add Input</button>
+                                <p>Inputs</p><a class="add-inputs" value="Add Input">Add Input</a>
                             </div>
                             <div id="added-inputs1" class="added-inputs">
                                 <div>
                                     <label>1</label>
-                                    <input type="text" name="one" id="1">
+                                    <input type="text" name="one" id="1" required="">
                                 </div>
                                 <div>
                                     <label>2</label>
-                                    <input type="text" name="two" id="2">
+                                    <input type="text" name="two" id="2" required="">
                                 </div>
                             </div>
                         </div>
-                        <button id="draw1" class="draw" onclick=draw(1)>GraphIt</button>
+                        <button id="draw1" type="submit" class="draw" onclick=draw(1)>GraphIt</button>
                         <button id="add-y" class="add-y" onclick=addYAxis()>Add Y Axis</button>
 
                         <div class="second-axis-inputs individual-axis-inputs2">
@@ -49,15 +50,16 @@
                                 <div class="added-inputs">
                                     <div>
                                         <label>1</label>
-                                        <input type="text" name="one" id="1B">
+                                        <input type="text" name="one" id="1B" required="">
                                     </div>
                                     <div>
                                         <label>2</label>
-                                        <input type="text" name="two" id="2B">
+                                        <input type="text" name="two" id="2B" required="">
                                     </div>
                                 </div>
                             </div>
-                            <button id="axis-2-btn" class="draw" onclick=draw(2)>GraphIt</button>
+                            <button id="axis-2-btn" type="submit" class="draw" onclick=draw(2)>GraphIt</button>
+                        </form>
                     </ul>
                 </div>
             </nav>
