@@ -3,6 +3,7 @@ $(document).ready(function () {
     var axis1Wrapper;
     var axis2Wrapper;
     const addButton = $('a.add-inputs');
+    const removeButton = $('a.remove-inputs');
     var x = 3;
     let axis1fieldHtml;
     let axis2fieldHtml;
@@ -19,6 +20,16 @@ $(document).ready(function () {
             x++; //Increment field counter
             $(axis1Wrapper).append(axis1fieldHtml); //Add field html
             $(axis2Wrapper).append(axis2fieldHtml);
+        }
+    });
+
+    $(removeButton).on('click', function (e) {
+        e.stopImmediatePropagation();
+        //Check maximum number of input fields
+        if (x > 4) {
+            $("#added-inputs1 div:last-child").last().remove()
+            $("#added-inputs2 div:last-child").last().remove()
+            x--; //Decrement field counter
         }
     });
 
