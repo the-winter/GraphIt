@@ -15,8 +15,8 @@ $(document).ready(function () {
         e.stopImmediatePropagation();
         //Check maximum number of input fields
         if (x < maxField) {
-            axis1fieldHtml = `<div><label>${x}</label><input id="${x}"type="text" name="field_name[]" value="" required="" data-parsley-type="digits"/><a href="javascript:void(0);" class="remove_button">X</a></div>`
-            axis2fieldHtml = `<div><label>${x}</label><input id="${x}B"type="text" name="field_name[]" value="" required="" data-parsley-type="digits"/><a href="javascript:void(0);" class="remove_button">X</a></div>`
+            axis1fieldHtml = `<div><label>${x} </label><input id="${x}"type="text" name="field_name[]" value="" required="" data-parsley-type="digits" style="margin-left:0.4em"/><a href="javascript:void(0);" class="remove_button">X</a></div>`
+            axis2fieldHtml = `<div><label>${x} </label><input id="${x}B"type="text" name="field_name[]" value="" required="" data-parsley-type="digits" style="margin-left:0.4em"/><a href="javascript:void(0);" class="remove_button">X</a></div>`
             x++; //Increment field counter
             $(axis1Wrapper).append(axis1fieldHtml); //Add field html
             $(axis2Wrapper).append(axis2fieldHtml);
@@ -35,7 +35,14 @@ $(document).ready(function () {
 
     $("form").submit(function (e) {
         e.preventDefault();
-        $('form').parsley();
+        $('form').parsley().on('field:validated', function () {
+            var ok = $('.parsley-error').length === 0;
+            $('.bs-callout-info').toggleClass('hidden', !ok);
+            $('.bs-callout-warning').toggleClass('hidden', ok);
+        })
+            .on('form:submit', function () {
+                return false; // Don't submit form for this demo
+            });
     });
 
 })

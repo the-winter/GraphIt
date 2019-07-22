@@ -6030,6 +6030,12 @@ div.graph div {
   text-transform: uppercase;
   cursor: pointer; }
 
+.input-block > label {
+  margin-bottom: 0px; }
+
+.input-block {
+  margin-bottom: 0.5em; }
+
 #y2-label {
   display: none; }
 
@@ -6041,3 +6047,30 @@ div.graph div {
 
 div.col-md-10 {
   padding-top: 55px; }
+
+/* Parsley */
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+  color: #468847;
+  background-color: #F2F9F0 !important;
+  border: 1px solid #D6E9C6; }
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  color: #ec110d;
+  background-color: #F9F0F0 !important;
+  border: 1px solid #f09784; }
+
+.parsley-errors-list {
+  list-style-type: none;
+  opacity: 0;
+  transition: all .3s ease-in;
+  color: #ec110d;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0; }
+
+.parsley-errors-list.filled {
+  opacity: 1; }
