@@ -6021,6 +6021,9 @@ div.graph div {
   flex-direction: row;
   justify-content: space-between; }
 
+#y2-label {
+  display: none; }
+
 .second-axis-inputs {
   display: none; }
 

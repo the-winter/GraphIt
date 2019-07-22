@@ -3,6 +3,7 @@ const addYAxis = () => {
     document.getElementById("draw1").style.display = "none";
     document.getElementById("add-y").disabled = true;
     document.getElementById("axis-2-btn").style.display = "block";
+    document.getElementById("y2-label").style.display = "block";
 }
 
 const draw = (axis) => {
@@ -39,7 +40,10 @@ const draw = (axis) => {
             }
         );
     } else {
+        var y2Label = document.getElementById("y2-label").children[1].value;
         for (var i = 1; i <= 11; i++) {
+
+
             let id = i.toString();
             var elem = document.getElementById(id);
             var elemB = document.getElementById(id + 'B');
@@ -58,10 +62,30 @@ const draw = (axis) => {
             inputs,
             {
                 title: title,
+                labels: ['Date', label, 'Y2'],
                 ylabel: label,
-                labels: ['x', label, 'Y'],
-                connectSeparatedPoints: true,
-                drawPoints: true,
+                y2label: y2Label,
+                series: {
+                    label: {
+                        axis: 'y'
+                    },
+                    'Y2': {
+                        axis: 'y2'
+                    }
+                },
+                axes: {
+                    y: {
+                        // set axis-related properties here
+                        drawGrid: false,
+                        independentTicks: false
+                    },
+                    y2: {
+                        // set axis-related properties here
+                        labelsKMB: true,
+                        drawGrid: true,
+                        independentTicks: true
+                    }
+                }
             }
         );
     }

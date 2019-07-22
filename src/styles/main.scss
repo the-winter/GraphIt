@@ -49,6 +49,10 @@ div.graph div {
     
 }
 
+#y2-label {
+    display: none;
+}
+
 .second-axis-inputs {
     display: none;
 }
@@ -57,7 +61,7 @@ div.graph div {
     display: none;
 }
 
-// FIX why writing nested styles wont work?
+// FIX nested styling
 // nav {
 //     .navbar-dark {
 //         background: black
