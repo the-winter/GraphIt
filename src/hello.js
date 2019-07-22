@@ -76,8 +76,8 @@ const draw = (axis) => {
                 axes: {
                     y: {
                         // set axis-related properties here
-                        drawGrid: false,
-                        independentTicks: false
+                        drawGrid: true,
+                        independentTicks: true
                     },
                     y2: {
                         // set axis-related properties here

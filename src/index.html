@@ -28,11 +28,14 @@
                             <label>Y2 axis Label</label>
                             <input type="text" id="label" name="label" required="">
                             </div>
+                            <button id="add-y" class="add-y" onclick=addYAxis()>Add Y Axis</button>
                             <br>
                             <div class="inputs">
-                                <p>Inputs</p><a class="add-inputs" value="Add Input">Add Input</a>
+                                <a class="add-inputs" value="Add Input">Add Input</a>
                                 <a class="remove-inputs" value="Remove Input">Remove Input</a>
+                               
                             </div>
+                            <label>Inputs</label>
                             <div id="added-inputs1" class="added-inputs">
                                 <div>
                                     <label>1</label>
@@ -45,13 +48,8 @@
                             </div>
                         </div>
                         <button id="draw1" type="submit" class="draw" onclick=draw(1)>GraphIt</button>
-                        <button id="add-y" class="add-y" onclick=addYAxis()>Add Y Axis</button>
-
                         <div class="second-axis-inputs individual-axis-inputs2">
-                            <h4>Inputs for Axis 2 (Optional)</h4>
-                                <div class="inputs">
-                                    <p>Inputs</p>
-                                </div>
+                            <label>Inputs for Axis 2 (Optional)</label>
                                 <div id="added-inputs2" class="added-inputs">
                                     <div>
                                         <label>1</label>

@@ -26,7 +26,7 @@ $(document).ready(function () {
     $(removeButton).on('click', function (e) {
         e.stopImmediatePropagation();
         //Check maximum number of input fields
-        if (x > 4) {
+        if (x >= 3) {
             $("#added-inputs1 div:last-child").last().remove()
             $("#added-inputs2 div:last-child").last().remove()
             x--; //Decrement field counter

@@ -13,6 +13,7 @@ nav.sidebar {
     bottom: 0;
     background: green;
     padding-top: 55px;
+    overflow-y: scroll;
 }
 
 nav.navbar-dark {
@@ -43,6 +44,15 @@ div.graph div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.inputs a {
+    background-color: lightgrey;
+    color: white;
+    padding: 0.5em 0.5em; 
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 .added-inputs {
