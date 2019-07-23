@@ -15,8 +15,8 @@ $(document).ready(function () {
         e.stopImmediatePropagation();
         //Check maximum number of input fields
         if (x < maxField) {
-            axis1fieldHtml = `<div class="grouped-input"><label>${x} </label><input id="${x}"type="text" name="field_name[]" value="" required="" data-parsley-type="digits"/></div>`
-            axis2fieldHtml = `<div class="grouped-input"><label>${x} </label><input id="${x}B"type="text" name="field_name[]" value="" required="" data-parsley-type="digits"/></div>`
+            axis1fieldHtml = `<div class="grouped-input"><label>${x} </label><input id="${x}"type="text" name="field_name[]" value="" required="" data-parsley-type="digits" data-parsley-errors-messages-disabled/></div>`
+            axis2fieldHtml = `<div class="grouped-input"><label>${x} </label><input id="${x}B"type="text" name="field_name[]" value="" required="" data-parsley-type="digits" data-parsley-errors-messages-disabled/></div>`
             x++; //Increment field counter
             $(axis1Wrapper).append(axis1fieldHtml); //Add field html
             $(axis2Wrapper).append(axis2fieldHtml);
