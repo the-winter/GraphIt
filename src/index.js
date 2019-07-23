@@ -1,4 +1,4 @@
-import { addYAxis, draw } from './hello';
+import { addYAxis, draw } from './main';
 import { g } from './graphs.js';
 import './script.js'
 import './styles/main.scss';

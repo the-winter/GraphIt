@@ -2,26 +2,29 @@
 
 $bg: yellow;
 
-div.col-sm-6 {
-    background: $bg;
-    color: green
+div.col-md-2 {
+    background: #151515
 }
 
 nav.sidebar {
     position: fixed;
     top: 0;
     bottom: 0;
-    background: green;
-    padding-top: 55px;
+    padding-top: 140px;
     overflow-y: scroll;
+    background-color: #151515
 }
 
 nav.navbar-dark {
-        background: black;
+        background: #26b3dd;
+        height: 100px;
 }
 
-a.navbar-brand {
+.brand {
     color: white;
+    width: fit-content;
+    padding-left: 15px;
+    padding-top: 20px;
 }
 
 a.nav-link {
@@ -30,6 +33,10 @@ a.nav-link {
 
 .draw {
     padding: 20px;
+    width: 100%;
+    background: #3BBAE0;
+    font-size: 1.5em;
+    color: white;
 }
 
 label {
@@ -38,16 +45,20 @@ label {
 
 div.graph div {
     width: 100%;
+    margin-top: 100px;
+    height: 400px;
 }
 
 .inputs {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    // margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.inputs a {
-    background-color: lightgrey;
+.inputs a, .add-y {
+    background-color: #3BBAE0;
     color: white;
     padding: 0.5em 0.5em; 
     text-decoration: none;
@@ -55,12 +66,28 @@ div.graph div {
     cursor: pointer;
 }
 
+.spacer {
+    padding: 10px;
+}
+
 .input-block > label {
     margin-bottom: 0px;
 }
 
+.input-block > input {
+    width: 100%;
+}
+
 .input-block {
     margin-bottom: 0.5em;
+}
+
+.grouped-input {
+    display: flex;
+}
+
+.grouped-input > input {
+    flex-grow:1;
 }
 
 #y2-label {
@@ -73,6 +100,21 @@ div.graph div {
 
 #axis-2-btn {
     display: none;
+}
+
+.create-axis-group {
+    display: flex
+}
+
+.create-axis-group > p {
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+}
+
+.second-axis-inputs > label {
+    margin-top: .5em;
 }
 
 // FIX nested styling
@@ -99,7 +141,7 @@ textarea.parsley-success {
 input.parsley-error,
 select.parsley-error,
 textarea.parsley-error {
-    color: rgb(236, 17, 13);
+    color: #efcac9d1;
     background-color: #F9F0F0 !important;
     border: 1px solid #f09784;
 }
@@ -109,7 +151,7 @@ textarea.parsley-error {
     opacity: 0;
     transition: all .3s ease-in;
 
-    color: rgb(236, 17, 13);;
+    color: #efcac9d1;
     margin-top: 5px;
     margin-bottom: 0;
   padding-left: 0;

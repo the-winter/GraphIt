@@ -12,7 +12,7 @@ var g = new Dygraph(
     {
         width: 'auto',
         ylabel: 'items',
-        title: 'Daily Temperatures in New York vs. San Francisco',
+        title: 'Default Title',
         labels: ['x', 'A', 'B'],
         connectSeparatedPoints: true,
         drawPoints: true,
