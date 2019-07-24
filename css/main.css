@@ -6076,6 +6076,19 @@ div.graph div {
 .second-axis-inputs > label {
   margin-top: .5em; }
 
+.dygraph-title {
+  font-weight: bold;
+  font-size: 1.5em; }
+
+.dygraph-xlabel {
+  font-size: 1.1em; }
+
+.dygraph-ylabel {
+  font-size: 1.1em; }
+
+.dygraph-y2label {
+  font-size: 1.1em; }
+
 div.col-md-10 {
   padding-top: 55px; }
 

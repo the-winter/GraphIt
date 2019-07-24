@@ -11,7 +11,8 @@ var g = new Dygraph(
     ],
     {
         width: 'auto',
-        ylabel: 'items',
+        ylabel: 'y label',
+        xlabel: 'x label',
         title: 'Default Title',
         labels: ['x', 'A', 'B'],
         connectSeparatedPoints: true,
