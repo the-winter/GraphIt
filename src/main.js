@@ -10,6 +10,7 @@ const draw = (axis) => {
 
     const title = document.getElementById("title").value;
     const label = document.getElementById("label").value;
+    const xLabel = document.getElementById("x-label").value;
     // chart input array
     var inputs = [];
     var addY = document.getElementById("add-y");
@@ -28,16 +29,19 @@ const draw = (axis) => {
             }
         }
 
+        var opts = {
+            title: title,
+            labels: [xLabel, label],
+            ylabel: label,
+            xlabel: xLabel,
+            connectSeparatedPoints: true,
+            drawPoints: true,
+        }
+
         var g = new Dygraph(
             document.getElementById('graph'),
             inputs,
-            {
-                title: title,
-                ylabel: label,
-                labels: ['x', label],
-                connectSeparatedPoints: true,
-                drawPoints: true,
-            }
+            opts
         );
     } else {
         var y2Label = document.getElementById("y2-label").children[2].value;
@@ -59,8 +63,9 @@ const draw = (axis) => {
 
         var opts = {
             title: title,
-            labels: ['Date', label, y2Label],
+            labels: [xLabel, label, y2Label],
             ylabel: label,
+            xlabel: xLabel,
             y2label: y2Label,
             series: {},
             axes: {
