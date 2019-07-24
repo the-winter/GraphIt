@@ -40,7 +40,7 @@ const draw = (axis) => {
             }
         );
     } else {
-        var y2Label = document.getElementById("y2-label").children[1].value;
+        var y2Label = document.getElementById("y2-label").children[2].value;
         for (var i = 1; i <= 11; i++) {
 
 
@@ -57,36 +57,32 @@ const draw = (axis) => {
             }
         }
 
+        var opts = {
+            title: title,
+            labels: ['Date', label, y2Label],
+            ylabel: label,
+            y2label: y2Label,
+            series: {},
+            axes: {
+                y: {
+                    // set axis-related properties here
+                    drawGrid: true,
+                    independentTicks: true
+                },
+                y2: {
+                    // set axis-related properties here
+                    labelsKMB: true,
+                    drawGrid: true,
+                    independentTicks: true
+                }
+            }
+        }
+        opts.series[y2Label] = { axis: 'y2' };
+
         var g = new Dygraph(
             document.getElementById('graph'),
             inputs,
-            {
-                title: title,
-                labels: ['Date', label, 'Y2'],
-                ylabel: label,
-                y2label: y2Label,
-                series: {
-                    label: {
-                        axis: 'y'
-                    },
-                    'Y2': {
-                        axis: 'y2'
-                    }
-                },
-                axes: {
-                    y: {
-                        // set axis-related properties here
-                        drawGrid: true,
-                        independentTicks: true
-                    },
-                    y2: {
-                        // set axis-related properties here
-                        labelsKMB: true,
-                        drawGrid: true,
-                        independentTicks: true
-                    }
-                }
-            }
+            opts
         );
     }
 

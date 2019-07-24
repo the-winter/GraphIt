@@ -10,7 +10,7 @@
 
 <body>
     <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-        <h1 class="brand">GraphIt</h1>
+        <h1 class="brand"><i>GraphIt</i></h1>
 
     </nav>
     <div class="container-fluid">
@@ -39,7 +39,7 @@
 
                             </div>
                             <div class="create-axis-group">
-                                <a id="add-y" class="add-y" onclick=addYAxis()>Add Y Axis</a> <p>(max 10)</p>
+                                <a id="add-y" class="add-y" onclick=addYAxis()>Add Y Axis</a>
                             </div>
                             <br>
                             <div class="inputs">
@@ -47,7 +47,7 @@
                                 <a class="remove-inputs" value="Remove Input">Remove Input</a>
                                
                             </div>
-                            <label>Y axis inputs</label>
+                            <label>Y axis inputs <span id="maximum">(max 10)</span></label>
                             <div id="added-inputs1" class="added-inputs">
                                 <div class="grouped-input">
                                     <label>1</label>
@@ -59,7 +59,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button id="draw1" type="submit" class="draw" onclick=draw(1)>GraphIt</button>
+                        <button id="draw1" type="submit" class="draw" onclick=draw(1)><i>GraphIt</i></button>
                         <div class="second-axis-inputs individual-axis-inputs2">
                             <label>Y2 Axis inputs</label>
                                 <div id="added-inputs2" class="added-inputs">
@@ -73,7 +73,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <button id="axis-2-btn" type="submit" class="draw" onclick=draw(2)>GraphIt</button>
+                            <button id="axis-2-btn" type="submit" class="draw" onclick=draw(2)><i>GraphIt</i></button>
                         </form>
                     </ul>
                 </div>

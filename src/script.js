@@ -21,6 +21,10 @@ $(document).ready(function () {
             $(axis1Wrapper).append(axis1fieldHtml); //Add field html
             $(axis2Wrapper).append(axis2fieldHtml);
         }
+
+        if (x === 11) {
+            $('#maximum').css("color", "#f09784")
+        }
     });
 
     $(removeButton).on('click', function (e) {
@@ -30,6 +34,11 @@ $(document).ready(function () {
             $("#added-inputs1 div:last-child").last().remove()
             $("#added-inputs2 div:last-child").last().remove()
             x--; //Decrement field counter
+        }
+        if (x === 11) {
+            $('#maximum').css("color", "#f09784")
+        } else {
+            $('#maximum').css("color", "white")
         }
     });
 

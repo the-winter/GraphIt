@@ -6058,6 +6058,9 @@ div.graph div {
 .grouped-input > input {
   flex-grow: 1; }
 
+.grouped-input > label {
+  margin-right: 5px; }
+
 #y2-label {
   display: none; }
 
@@ -6069,12 +6072,6 @@ div.graph div {
 
 .create-axis-group {
   display: flex; }
-
-.create-axis-group > p {
-  color: white;
-  margin-top: 8px;
-  margin-bottom: 0px;
-  margin-left: 15px; }
 
 .second-axis-inputs > label {
   margin-top: .5em; }
