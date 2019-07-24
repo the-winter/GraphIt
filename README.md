@@ -28,5 +28,4 @@ Input validation
 - Scss
 - Webpack
 
-
-![]()
+![](/src/images/graphs-default.png)
