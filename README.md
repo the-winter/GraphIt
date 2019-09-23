@@ -25,7 +25,7 @@ Input validation
 - Dygraph 
 - Parsleyjs
 - jQuery
-- Scss
+- Sass
 - Webpack
 
 ![](/src/images/graphs-default.png)
